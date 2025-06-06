@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Парсинг документов</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Парсинг документов</h1>
+        <p>Укажите название файлов или путь к файлам и нажмите кнопку для запуска обработки</p>
+        
+        <div class="form-group">
+            <label for="docx_in">Входной DOCX файл:</label>
+            <input type="text" id="docx_in" placeholder="например: input.docx">
+        </div>
+        
+        <div class="form-group">
+            <label for="xlsx_in">Входной XLSX файл:</label>
+            <input type="text" id="xlsx_in" placeholder="например: input.xlsx">
+        </div>
+        
+        <div class="form-group">
+            <label for="docx_out">Выходной DOCX файл:</label>
+            <input type="text" id="docx_out" placeholder="например: output.docx">
+        </div>
+        
+        <div class="form-group">
+            <label for="xlsx_out">Выходной XLSX файл:</label>
+            <input type="text" id="xlsx_out" placeholder="например: output.xlsx">
+        </div>
+        
+        <button id="parseBtn">Выполнить</button>
+        
+        <div class="loading" id="loading">
+            <p>Обработка документов, пожалуйста подождите...</p>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
